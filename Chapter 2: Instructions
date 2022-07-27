@@ -1,0 +1,109 @@
+q1>
+
+#include<conio.h>
+int main()
+{
+int num,a,b,c,d,e;
+printf("Enter a five digit number : ");
+scanf("%d", &num);
+e=num%10;
+d=(num/10)%10;
+c=(num/100)%10;
+b=(num/1000)%10;
+a=(num/10000);
+printf("%d is the sum of the digits of the number %d.", a+b+c+d+e, num);
+getch();
+return 0;
+}
+
+q2>
+
+  #include<stdio.h>
+#include<conio.h>
+int main()
+{
+int num,a,b,c,d,e;
+printf("Enter a five digit number : ");
+scanf("%d", &num);
+e=num%10;
+d=(num/10)%10;
+c=(num/100)%10;
+b=(num/1000)%10;
+a=(num/10000);
+num = e*10000+d*1000+c*100+b*10+a;
+printf("\n%d", num);
+getch();
+return 0;
+}
+
+q3>
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+	float a , b , c , s , area;
+
+printf("\nEnter three sides of the triangle : ");
+scanf("%f%f%f", &a, &b, &c);
+
+//Finding area of the triangle by the Heron's Formula
+s = (a+b+c)/2;
+area = sqrt(s*(s-a)*(s-b)*(s-c));
+//sqrt() is a funtion that find the square root.
+
+printf("\nArea : %f", area);
+
+getch();
+return 0;
+}
+
+
+q4>
+
+
+#include<stdio.h>>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+float x, y, r, theta;
+
+printf("Enter the x and y coordinates : ");
+scanf("%f%f", &x, &y);
+
+r = sqrt(x*x + y*y);
+theta = atan(y/x);
+//atan() is a function to find the tan inverse
+
+printf("\nCoordinates in polar form : %.2f(cos(%.2f) + i.sin(%.2f))", r, theta, theta);
+//%.2f means only two decimal palces will be printed.
+
+getch();
+return 0;
+}
+
+q5>
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main()
+{
+float l1,l2,g1,g2, D;
+
+printf("\nEnter (two) the values of lattitude : ");
+scanf("%f%f", &l1, &l2);
+
+printf("\nEnter (two) the values of longitude : ");
+scanf("%f%f", &g1, &g2);
+
+D = 3963*acos(sin(l1)*sin(l2) + cos(l1)*cos(l2)*cos(g2-g1));
+
+printf("\nDistance : %f", D);
+
+getch();
+return 0;
+}
