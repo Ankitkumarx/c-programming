@@ -1,0 +1,184 @@
+(a)
+
+#include<stdio.h>
+int main()
+{
+  float sp,cp;
+  printf("Enter Cost Price and Selling Price\n");
+  scanf("%f %f",&cp,&sp);
+  if(sp-cp>0)
+  {
+     printf("Profit incurred is %f.",sp-cp);
+  }
+  if(sp-cp<0)
+    {
+      printf("Loss incurred is %f",cp-sp);
+     }
+return 0;
+}
+
+(b)
+
+#include<stdio.h>
+int main()
+{
+ printf("Enter number\n");
+ int number;
+ scanf("%d",&number);
+  if(number%2==0)
+ {
+ printf("Number is Even");
+ }
+ else
+ {
+ printf("Number is Odd");
+ }
+ return 0;
+}
+ 
+ 
+ (c)
+ 
+ #include <stdio.h>
+int main() {
+   int year;
+   printf("Enter a year: ");
+   scanf("%d", &year);
+
+   // leap year if perfectly divisible by 400
+   if (year % 400 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   // not a leap year if divisible by 100
+   // but not divisible by 400
+   else if (year % 100 == 0) {
+      printf("%d is not a leap year.", year);
+   }
+   // leap year if not divisible by 100
+   // but divisible by 4
+   else if (year % 4 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   // all other years are not leap years
+   else {
+      printf("%d is not a leap year.", year);
+   }
+
+   return 0;
+}
+
+(d) uploading soon...
+
+(e)
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int num,a,b,c,d,e,x;
+
+printf("Enter a five digit number : ");
+scanf("%d", &num);
+
+//separating digits of the number
+e = num % 10;
+d = (num/10) % 10;
+c = (num/100) % 10;
+b = (num/1000) % 10;
+a = (num/10000);
+
+//reversing the number
+x = e*10000 + d*1000 + c*100 + b*10 + a;
+printf("\n%d", x);
+
+if(x == num)
+	printf("\n\nThe reverse of the number %d is same as actual number.", num);
+
+getch();
+return 0;
+}
+
+
+(f)
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int ram,sam,ajy;
+
+printf("Enter the age of Ram, Shyam and Ajay respectively : ");
+scanf("%d%d%d", &ram,&sam,&ajy);
+
+if(ram<sam && ram<ajy)
+	printf("\n\nRam is youngest among all.");
+else if(sam<ram && sam<ajy)
+	printf("\n\nShyam is youngest among all.");
+else
+	printf("\n\nAjay is youngest among all.");
+
+getch();
+return 0;
+}
+
+(g)
+#include<stdio.h>
+int main()
+{
+int angle1,angle2,angle3;
+printf("Enter the angles of Triangle in any order in Degrees.\n");
+scanf("%d %d %d",&angle1,&angle2,&angle3);
+if(angle1+angle2+angle3==180)
+{
+printf("Triangle is Valid.");
+}
+else
+{
+printf("Triangle is Invalid.");
+}
+return 0;
+}
+
+(h) uplloading soon..
+
+(i)
+#include <stdio.h>
+int main()
+{
+int l,b;
+printf("Enter length and breadth of rectangle\n");
+scanf("%d %d",&l,&b);
+if((l*b)>(2*(l+b)))
+{
+    printf("Area is Greater than perimeter\n");
+}
+else
+{
+    printf("Area is not Greater than perimeter\n");
+}
+return 0;
+}
+
+(j)
+
+#include <stdio.h>
+int main()
+{
+ float x1,y1,x2,y2,x3,y3;
+printf("Enter coordinates (x1,y1)\n");
+scanf("%f %f",&x1,&y1);
+printf("Enter coordinates (x2,y2)\n");
+scanf("%f %f",&x2,&y2);
+printf("Enter coordinates (x3,y3)\n");
+scanf("%f %f",&x3,&y3);
+if((y2-y1)/(x2-x1)==(y3-y1)/(x3-x1))
+{
+    printf("Point lies on straight line");
+}
+else
+{
+    printf("Points don't lie on straight line");
+}
+return 0;
+}
+
+(k) uploading soon...
